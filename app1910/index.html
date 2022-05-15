@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/game-icon.png" type="image/png">
+    <title>1910</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="titulo">The lord of the rings</h1>
+        <h2 class="subtitulo"><abbr title="The Lord of the Rings">LOTR</abbr></h2>
+        <p>Just an image</p>
+        <picture>
+            <!--Troca a imagem caso o tamanho da tela seja menor que 1050px-->
+            <source media="(max-width:1050px )" srcset="./imagens/lotr-logo-small.png" type="image/png">
+            <img src="./imagens/lotr-logo-medium.png" alt="The Lord of The rings">
+        </picture>
+        <p>An incredible movie about a <strong>Hobbit</strong> and a <em> Mage , a Dwarf, a human and an Elf</em></p>
+        <p><mark>Bilbo</mark> and his friends join an adveture to destroy the ring of Sauron</p>
+        <p>On this journey they find and fight against Orcs <del>and goblins</del>, and a strange creature called
+            <ins>Smeagle</ins>
+        </p>
+        <a href="https://www.imdb.com/title/tt0120737/" target="_blank" rel="external">IMDB
+            The Lord os the Rings</a>
+        <a href="page02.html" rel="next">My page</a>
+        <p><a href="pdfs/Ficha-Grog.pdf" type="application/pdf" download="character-sheet.pdf">Download Character
+                Sheet</a>
+        </p>
+        <h2 class="subtitulo">Misty Mountain Cold - The Hobbit</h2>
+        <audio preload="metadata" controls>
+            <source src="./audios/misty-mountains.mp3" type="audio/mpeg">
+        </audio>
+        <h2 class="subtitulo">The Lord of the Rings - The fellowship of the ring - Trailer</h2>
+        <!-- <video width="720" poster="./imagens/lotr-logo.png" controls>
+            <source src="./videos/lotr-Trailer.mp4" type="video/mp4">
+            <source src="./videos/Lotr-Trailer-1.webm" type="video/webm">
+        </video> -->
+        <iframe src="https://www.youtube.com/embed/V75dMMIW2B4" title="YouTube video player" frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </main>
+</body>
+
+</html>

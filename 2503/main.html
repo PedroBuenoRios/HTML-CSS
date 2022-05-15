@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--Pseudo-Classes dizem respeito ao estado do elemento html-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classe</title>
+    <style>
+        div {
+            background-color: aqua;
+            border: 1px solid red;
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            /* cima direita Baixo Esquerda */
+            /* margin: 10px 10px 10px 10px; */
+            margin: auto;
+            margin-bottom: 20px;
+            outline: 5px dashed green;
+            cursor:grab;
+        }
+       
+        div:hover > p{
+            display: block;
+        }
+        div:active{
+            background-color: red;
+        }
+        div > p{
+            display: none;
+        }
+        #d3:hover{
+            background-color: blueviolet;
+        }
+        #d2::after{
+            content: 'Abracdabra';
+        }
+    </style>
+</head>
+
+<body>
+    <div id="d1">
+        Texto HAHAHA
+        <p> Opa eai</p>
+    </div>
+    <div id="d2">2</div>
+    <div id="d3">Cheiro de<sup>Hagatanga</sup></div>
+</body>
+
+</html>
